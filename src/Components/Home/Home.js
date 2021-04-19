@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+import Canvas from "../Canvas/Canvas";
+import PagePrincipal from "../PagePrincipal/PagePrincipal";
+import Sobre from "../Sobre/Sobre";
+
+import { ContainerHome } from "./HomeStyle";
 
 export const Home = () => {
-    return (
-        <div>
-            <h1>Home</h1>
-        </div>
-    )
-}
+  return (
+    <ContainerHome>
+      <section className="principal">
+        <Canvas />
+        <PagePrincipal />
+      </section>
 
-export default Home
+      <Sobre />
+    </ContainerHome>
+  );
+};
+
+export default Home;

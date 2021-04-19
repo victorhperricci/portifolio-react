@@ -25,9 +25,11 @@ export const GlobalStyle = createGlobalStyle`
     html {
         @media (max-width: 1080px) {
             font-size: 93.75%; // 14px
+
+          
         }
 
-        @media (max-width: 720px) {
+        @media (max-width: 920px) {
             font-size: 87.5%; // 13px
         }
     }
@@ -54,4 +56,7 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
 
-`
+
+  
+
+`;
