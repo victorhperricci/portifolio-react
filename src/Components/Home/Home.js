@@ -1,7 +1,7 @@
 import React from "react";
 import Canvas from "../Canvas/Canvas";
 import PagePrincipal from "../PagePrincipal/PagePrincipal";
-import Sobre from "../Sobre/Sobre";
+import SobreIntroducao from "../Sobre/SobreIntroducao";
 
 import { ContainerHome } from "./HomeStyle";
 
@@ -12,8 +12,7 @@ export const Home = () => {
         <Canvas />
         <PagePrincipal />
       </section>
-
-      <Sobre />
+      <SobreIntroducao />
     </ContainerHome>
   );
 };

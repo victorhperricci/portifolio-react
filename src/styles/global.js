@@ -58,5 +58,141 @@ export const GlobalStyle = createGlobalStyle`
 
 
   
+    .h1 {
+        position: relative;
+
+        &::after {
+            content: '</h1>';
+            display: block;
+            position: absolute;
+            left: -15px;
+            
+            color: var(--slate);
+            opacity: 0.3;
+            font-size: 0.8rem;
+            font-family: 'Pacifico', cursive;
+
+            letter-spacing: 4px;
+        }
+        &::before {
+            content: '<h1>';
+            display: block;
+            position: absolute;
+            top: -20px;
+            left: -15px;
+
+            color: var(--slate);
+            opacity: 0.5;
+            font-size: 0.8rem;
+            font-family: 'Pacifico', cursive;
+            letter-spacing: 4px;
+            
+        }
+    }
+
+    .p {
+        position: relative;
+
+        &::after {
+            content: '</p>';
+            display: block;
+
+            margin: 0px 0px 5px 0px ;
+            transform: translateX(-15px);
+
+            color: var(--slate);
+            opacity: 0.3;
+            font-size: 0.8rem;
+            font-family: 'Pacifico', cursive;
+
+            letter-spacing: 4px;
+        }
+        &::before {
+            content: '<p>';
+            display: block;
+            transform: translateX(-15px);
+
+            /* position: absolute; */
+            /* top: -20px; */
+            margin: 5px 0px 0px 0px ;
+            
+            color: var(--slate);
+            opacity: 0.5;
+            font-size: 0.8rem;
+            font-family: 'Pacifico', cursive;
+            letter-spacing: 4px;
+            
+        }
+    }
+
+    .div {
+        position: relative;
+
+        &::after {
+            content: '</div>';
+            display: block;
+
+            margin: 0px 0px 0px 0px ;
+            transform: translateX(-20px);
+
+            color: var(--slate);
+            opacity: 0.3;
+            font-size: 0.8rem;
+            font-family: 'Pacifico', cursive;
+
+            letter-spacing: 4px;
+        }
+        &::before {
+            content: '<div>';
+            display: block;
+            transform: translateX(-20px);
+
+            /* position: absolute; */
+            /* top: -20px; */
+            margin: 0px 0px 20px 0px ;
+            
+            color: var(--slate);
+            opacity: 0.5;
+            font-size: 0.8rem;
+            font-family: 'Pacifico', cursive;
+            letter-spacing: 4px;
+            
+        }
+    }
+
+    .section {
+        position: relative;
+
+        &::after {
+            content: '</section>';
+            display: block; 
+            position: absolute;
+            bottom: 30px;
+            transform: translateX(-20px);
+
+            color: var(--slate);
+            opacity: 0.3;
+            font-size: 0.8rem;
+            font-family: 'Pacifico', cursive;
+
+            letter-spacing: 4px;
+        }
+
+        &::before {
+            content: '<section>';
+            display: block;
+            transform: translateX(-20px);
+            position: absolute;
+            top: 30px;
+            margin: 0px 0px 20px 0px ;
+            
+            color: var(--slate);
+            opacity: 0.5;
+            font-size: 0.8rem;
+            font-family: 'Pacifico', cursive;
+            letter-spacing: 4px;
+            
+        }
+    }
 
 `;
