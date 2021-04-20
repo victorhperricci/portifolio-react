@@ -37,7 +37,22 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background-color: var(--dark-navy);
         --webkit-font-smoothing: antialiased;
+
+        &::-webkit-scrollbar {
+            width: 12px;               /* width of the entire scrollbar */
+        }
+        
+        &::-webkit-scrollbar-track {
+            background: var(--dark-navy);        /* color of the tracking area */
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--green);
+            opacity: 0.7;    /* color of the scroll thumb */
+            border-radius: 20px;       /* roundness of the scroll thumb */
+        }
     }
+
 
     h1, h2, h3, h4, h5, h6, strong {
         font-weight: bold;
