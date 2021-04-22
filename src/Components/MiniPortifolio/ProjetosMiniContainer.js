@@ -96,6 +96,7 @@ export const ProjetosMiniContainer = styled.div`
             transform: scale(0);
 
             h1 {
+                text-align: center;
                 color: var(--green);
                 font-size: 2.5rem;
                 margin-bottom: 2rem;
