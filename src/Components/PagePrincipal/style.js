@@ -57,14 +57,14 @@ export const PagePrincipalContainer = styled.div`
       width: 70%;
       position: relative;
       span {
-        font-size: 3rem;
+        font-size: max(1rem, 3vw);
         font-weight: bold;
         transform: scale(2);
         color: var(--slate);
         transition: all 0.4s;
         padding-left: 4px;
         position: relative;
-        margin: 10px 5px;
+        margin: 10px 8px;
         display: block;
 
         &:hover {

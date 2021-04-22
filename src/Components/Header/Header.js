@@ -18,7 +18,7 @@ const Header = () => {
         <ul>
           <NavLink to="/sobre">Sobre</NavLink>
           <NavLink to="/habilidades">Habilidades</NavLink>
-          <NavLink to="/trabalho">Trabalho</NavLink>
+          <NavLink to="/trabalhos">Trabalho</NavLink>
         </ul>
       </nav>
     </HeaderContainer>

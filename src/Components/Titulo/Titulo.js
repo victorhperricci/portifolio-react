@@ -76,8 +76,6 @@ const Titulo = ({ texto }) => {
         span.append(letter);
         titulo.current.append(span);
 
-        console.log(letter);
-
         letter === " "
           ? span.classList.add("space-letter")
           : span.classList.add("animateTitle");

@@ -5,6 +5,9 @@ export const HeaderContainer = styled.header`
   height: 100vh;
   width: auto;
   position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   /* border-radius: 0px 40px 0 40px; */
