@@ -1,0 +1,49 @@
+[
+    {
+        "titulo": "Clone Marvel",
+        "imgFilme": "./assets/filmeMarvell.png",
+        "description": "Eu como grande fã da Marvel e programador, resolvi criar um clone do site deles, este projeto me ajudou a esclarecer dúvidas sobre menu dropdown e carrousel",
+        "tecUsadas": [
+            "HTML",
+            "CSS",
+            "JS"
+        ],
+        "link": "https://clone-marvel.netlify.app/"
+    },
+    {
+        "titulo": "ToDo List - Ignite",
+        "imgFilme": "./assets/todo-list-ignite.png",
+        "description": "Feito junto ao BootCamp Ignite React JS - RocketSeat, Aprendi novos conceitos sobre React JS e primeiro projeto em que utilizo TypeScript",
+        "tecUsadas": [
+            "HTML",
+            "CSS",
+            "React JS",
+            "TypeScript"
+        ],
+        "link": "https://ignite-challenge01-todolist.netlify.app"
+    },
+    {
+        "titulo": "Animais Fantásticos",
+        "imgFilme": "./assets/animaisFantasticos.png",
+        "description": "Feito junto ao curso de JavaScript da Origamid, nesse projeto aprendi diversas features de interatividades que podem ser adicionadas ao site, além do mais, foi onde aprendi o que é API",
+        "tecUsadas": [
+            "HTML",
+            "CSS",
+            "JS"
+        ],
+        "link": "https://animais-fantasticoss.netlify.app"
+
+    },
+    {
+        "titulo": "Dev Finances",
+        "imgFilme": "./assets/devFinances.png",
+        "description": "Fiz esse projeto junto a semana NLW - RocketSeat, nele aprendi o conceito de usar o LocalStorage para armazenar os dados, como se fosse um mini banco de dados do Browser",
+        "tecUsadas": [
+            "HTML",
+            "CSS",
+            "JS"
+        ],
+        "link": "https://finances-dev.netlify.app"
+        
+    }
+]
