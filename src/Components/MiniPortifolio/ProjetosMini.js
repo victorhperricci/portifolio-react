@@ -52,14 +52,14 @@ const ProjetosMini = () => {
   return (
     <>   
       <div className="controls">
-        <button className="prev" onClick={slidePrev}>
+        <button className="prev" data-aos="fade-right" data-aos-delay="300" onClick={slidePrev}>
           <i className="fas fa-arrow-left"></i>
         </button>
-        <button className="next" onClick={slideNext}>
+        <button className="next"  data-aos="fade-left" data-aos-delay="300" onClick={slideNext}>
           <i className="fas fa-arrow-right"></i>
         </button>
       </div>
-      <ProjetosMiniContainer ref={wrapper}>
+      <ProjetosMiniContainer data-aos="fade" data-aos-delay="600" ref={wrapper}>
         {slidesFetch && slidesFetch.map((slide, index) => (
            <div key={`slide${index}`}>
             <img className="img-film" src={slide.imgFilme} />

@@ -9,7 +9,7 @@ const MiniPortifolio = () => {
     <MiniPortifolioContainer className="section">
       <div className="infos">
         <Titulo texto="Meu Portifólio" />
-        <p className="p">
+        <p className="p" data-aos="fade-down">
           Uma pequena galeria dos meus trabalhos recentes, todos eles fiz
           sozinho por questão de estudo e aprimoramento, se caso quiser ver mais
           dos meus projetos, acesse minha página de{" "}

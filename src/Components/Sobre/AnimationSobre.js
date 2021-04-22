@@ -18,7 +18,7 @@ const AnimationSobre = () => {
   };
 
   return (
-    <div className="animation-container">
+    <div data-aos="slide-up" data-aos-delay="800" className="animation-container">
       <Lottie
         className="animation"
         options={defaultOptions}
