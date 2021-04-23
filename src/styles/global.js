@@ -37,6 +37,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background-color: var(--dark-navy);
         --webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
 
         &::-webkit-scrollbar {
             width: 12px;               /* width of the entire scrollbar */

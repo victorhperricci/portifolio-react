@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { UserStorage } from "../../../../Context/UserContext";
 import Canvas from "../Canvas/Canvas";
 import Contato from "../Contato/Contato";
 import MiniPortifolio from "../MiniPortifolio/MiniPortifolio";
@@ -8,8 +9,13 @@ import SobreIntroducao from "../Sobre/SobreIntroducao";
 import { ContainerHome } from "./HomeStyle";
 
 export const Home = () => {
+
+  const { animationRoutes } = useContext(UserStorage)
+
+  console.log(animationRoutes)
+
   return (
-    <ContainerHome>
+    <ContainerHome variants={animationRoutes} animate="mostrar" initial="inicial" exit="esconder">
       <section className="principal">
         <Canvas />
         <PagePrincipal />
