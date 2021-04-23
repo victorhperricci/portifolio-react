@@ -15,7 +15,7 @@ const linkSobre = keyframes`
 const Button = styled.button`
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 80px;
 
   background-color: transparent;
   border: 1px solid var(--slate);

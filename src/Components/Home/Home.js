@@ -1,5 +1,6 @@
 import React from "react";
 import Canvas from "../Canvas/Canvas";
+import Contato from "../Contato/Contato";
 import MiniPortifolio from "../MiniPortifolio/MiniPortifolio";
 import PagePrincipal from "../PagePrincipal/PagePrincipal";
 import SobreIntroducao from "../Sobre/SobreIntroducao";
@@ -15,6 +16,7 @@ export const Home = () => {
       </section>
       <SobreIntroducao />
       <MiniPortifolio />
+      <Contato />
     </ContainerHome>
   );
 };

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerHome = styled.div`
+export const ContainerHome = styled.main`
   height: auto;
   width: 100%;
   padding: 0px 50px 0px 200px;
