@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Lottie from "react-lottie";
-import animationData from "../animation.json";
+import animationData from "../../../animation.json";
 
 const AnimationSobre = () => {
   const [animationState, setAnimateState] = useState({

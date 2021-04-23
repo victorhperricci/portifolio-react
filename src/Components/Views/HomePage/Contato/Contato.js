@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Titulo from '../Titulo/Titulo'
+import Titulo from '../../../Titulo/Titulo'
 
 const ContatoOcntainer = styled.section`
     width: 100%;

@@ -1,7 +1,7 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import { GlobalStyle } from "./styles/global";
-import { Home } from "./Components/Home/Home";
+import { Home } from "./Components/Views/HomePage/Home/Home";
 import ButtonToTop from "./Components/Button/ButtonToTop";
 import Footer from "./Components/Footer/Footer";
 

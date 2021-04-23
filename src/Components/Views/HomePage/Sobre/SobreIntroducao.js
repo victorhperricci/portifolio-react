@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Titulo from "../Titulo/Titulo";
+import Titulo from "../../../Titulo/Titulo";
 import AnimationSobre from "./AnimationSobre";
 import { SobreContainer } from "./style";
 

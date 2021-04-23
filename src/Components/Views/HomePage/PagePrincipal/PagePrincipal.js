@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Button from "../Button/Button";
+import Button from "../../../Button/Button";
 import { PagePrincipalContainer } from "./style";
 
 import { Link } from "react-scroll";

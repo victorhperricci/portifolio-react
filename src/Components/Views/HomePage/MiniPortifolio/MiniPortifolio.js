@@ -1,6 +1,6 @@
 import React from "react";
 import { MiniPortifolioContainer } from "./style";
-import Titulo from "../Titulo/Titulo";
+import Titulo from "../../../Titulo/Titulo";
 import { Link } from "react-router-dom";
 import ProjetosMini from "./ProjetosMini";
 
@@ -24,3 +24,4 @@ const MiniPortifolio = () => {
 };
 
 export default MiniPortifolio;
+    

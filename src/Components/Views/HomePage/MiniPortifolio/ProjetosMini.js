@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import styled from "styled-components";
 
-import MouseOver from "../../assets/mouseover2.png";
+import MouseOver from "../../../../assets/mouseover2.png";
 import { ProjetosMiniContainer } from "./ProjetosMiniContainer";
 
 const ProjetosMini = () => {
