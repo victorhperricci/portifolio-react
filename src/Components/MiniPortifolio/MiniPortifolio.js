@@ -6,7 +6,7 @@ import ProjetosMini from "./ProjetosMini";
 
 const MiniPortifolio = () => {
   return (
-    <MiniPortifolioContainer className="section">
+    <MiniPortifolioContainer className="section mini-port">
       <div className="infos">
         <Titulo texto="Meu Portifólio" />
         <p className="p" data-aos="fade-down">

@@ -38,6 +38,16 @@ const animateLetter = keyframes`
 
 `;
 
+const linkSobre = keyframes`
+  0%, 100%{
+    transform: translateY(-5px);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+`;
+
 export const PagePrincipalContainer = styled.div`
   width: 100%;
   height: 100vh;
@@ -97,5 +107,34 @@ export const PagePrincipalContainer = styled.div`
     margin-top: 30px;
     transform: translateX(-200%);
     animation: fadeInLeft 0.5s 2.5s forwards;
+  }
+
+  .link-sobre {
+    position: absolute;
+    bottom: -9rem;
+    left: 50%;
+
+    background-color: transparent;
+    border: 1px solid var(--slate);
+    padding: 20px;
+    border-radius: 40%;
+    color: var(--slate);
+
+    cursor: pointer;
+
+    transition: all 0.4s;
+
+    p {
+      animation: ${linkSobre} 0.6s infinite;
+      transition: all 0.4s;
+    }
+
+    &:hover {
+      background-color: var(--green);
+
+      p {
+        color: var(--dark-navy);
+      }
+    }
   }
 `;

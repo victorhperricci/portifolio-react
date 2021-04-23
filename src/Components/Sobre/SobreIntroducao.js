@@ -8,15 +8,14 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const SobreIntroducao = () => {
-
   useEffect(() => {
     Aos.init({
-      duration: 1000
-    })
-  }, [])
+      duration: 1000,
+    });
+  }, []);
 
   return (
-    <SobreContainer className="section">
+    <SobreContainer className="section" id="sobre">
       <div className="sobre">
         <div>
           <Titulo texto="O que estou fazendo?" />

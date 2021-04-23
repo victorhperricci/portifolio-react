@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import Button from "../Button/Button";
 import { PagePrincipalContainer } from "./style";
 
+import { Link } from "react-scroll";
+
 const PagePrincipal = () => {
   const linha1 = useRef();
   const linha2 = useRef();
@@ -64,6 +66,7 @@ const PagePrincipal = () => {
         <div ref={linha3} className="linha"></div>
 
         <Button
+          data-aos-anchor=".sobre"
           color="var(--slate)"
           border="var(--slate)"
           bgcColor="transparent"
@@ -71,6 +74,10 @@ const PagePrincipal = () => {
         >
           <p>Me Contate !</p>
         </Button>
+
+        <Link className="link-sobre" to="sobre" smooth={true} duration={1000}>
+          <p>↓</p>
+        </Link>
       </h1>
     </PagePrincipalContainer>
   );
