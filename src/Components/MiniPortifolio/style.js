@@ -33,8 +33,38 @@ export const MiniPortifolioContainer = styled.section`
     width: 100%;
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
 
     .controls {
+      flex: 1;
+      z-index: 1000;
+
+      .controls-select {
+        z-index: 1000;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          display: inline-block;
+          width: 20px !important;
+          height: 7px !important;
+          background-color: var(--slate);
+          margin: 0 10px;
+
+          transition: all 0.4s;
+          cursor: pointer;
+
+          &.active,
+          &:hover {
+            background-color: var(--green);
+          }
+        }
+      }
+
       button {
         position: absolute;
         top: 50%;
@@ -78,6 +108,13 @@ export const MiniPortifolioContainer = styled.section`
       .next {
         right: 0;
       }
+    }
+
+    .controls-selection {
+      background-color: #fff;
+      height: 100px;
+      width: 100%;
+      z-index: 1000;
     }
   }
 `;
