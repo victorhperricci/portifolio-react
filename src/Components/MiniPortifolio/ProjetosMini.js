@@ -116,7 +116,7 @@ const ProjetosMini = () => {
           <i className="fas fa-arrow-right"></i>
         </button>
 
-        <div ref={controlsSelect} className="controls-select">
+        <div ref={controlsSelect} data-aos="fade-up" className="controls-select">
           <span></span>
           <span></span>
           <span></span>
