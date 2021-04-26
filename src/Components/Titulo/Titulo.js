@@ -83,7 +83,7 @@ const Titulo = ({ texto }) => {
     });
   }, []);
 
-  return <Title data-aos="fade-right"  className="h1" ref={titulo}></Title>;
+  return <Title  className="h1" ref={titulo}></Title>;
 };
-
+// data-aos="fade-right" 
 export default Titulo;
