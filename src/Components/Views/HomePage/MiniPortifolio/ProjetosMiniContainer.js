@@ -80,7 +80,8 @@ export const ProjetosMiniContainer = styled.div`
         transition-delay: 0.5s;
 
         a {
-          color: var(--dark-navy);
+          color: black !important;
+          filter: brightness(0.4);
         }
       }
       .text {

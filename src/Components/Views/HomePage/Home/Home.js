@@ -1,3 +1,4 @@
+import { useViewportScroll } from "framer-motion";
 import React, { useContext } from "react";
 import { UserStorage } from "../../../../Context/UserContext";
 import Canvas from "../Canvas/Canvas";
@@ -9,13 +10,20 @@ import SobreIntroducao from "../Sobre/SobreIntroducao";
 import { ContainerHome } from "./HomeStyle";
 
 export const Home = () => {
+  const { animationRoutes } = useContext(UserStorage);
+  const { scrollYProgress } = useViewportScroll();
 
-  const { animationRoutes } = useContext(UserStorage)
+  console.log(scrollYProgress);
 
-  console.log(animationRoutes)
+  console.log(animationRoutes);
 
   return (
-    <ContainerHome variants={animationRoutes} animate="mostrar" initial="inicial" exit="esconder">
+    <ContainerHome
+      variants={animationRoutes}
+      animate="mostrar"
+      initial="inicial"
+      exit="esconder"
+    >
       <section className="principal">
         <Canvas />
         <PagePrincipal />
