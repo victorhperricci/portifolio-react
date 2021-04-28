@@ -102,16 +102,9 @@ export const PagePrincipalContainer = styled.div`
     }
   }
 
-  button {
-    position: relative;
-    margin-top: 30px;
-    transform: translateX(-200%);
-    animation: fadeInLeft 0.5s 2.5s forwards;
-  }
-
   .link-sobre {
     position: absolute;
-    bottom: -9rem;
+    bottom: 5rem;
     left: 50%;
 
     background-color: transparent;
@@ -136,5 +129,11 @@ export const PagePrincipalContainer = styled.div`
         color: var(--dark-navy);
       }
     }
+  }
+
+  a.link {
+    animation: fadeInLeft 1s forwards;
+    transform: translateX(-300%);
+    animation-delay: 2s;
   }
 `;

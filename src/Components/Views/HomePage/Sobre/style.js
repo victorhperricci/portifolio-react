@@ -43,10 +43,6 @@ export const SobreContainer = styled.section`
           filter: brightness(60%);
         }
       }
-
-      /* p + p {
-        margin-top: 1.5rem;
-      } */
     }
   }
 

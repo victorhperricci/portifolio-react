@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
         --lightest-slate: #ccd6f6;
 
         --green: #64ffda;
-        --green-tint: rgba(26, 59, 52, 0.1);
+        --green-tint: rgba(26, 59, 52, 0.3);
 
         --font: 'Share Tech Mono', monospace;
     }
@@ -209,6 +209,56 @@ export const GlobalStyle = createGlobalStyle`
             letter-spacing: 4px;
             
         }
+    }
+
+
+    // Link
+
+    a.link {
+        background-color: transparent;
+        border: 1px solid var(--slate);
+        color: var(--slate);
+        margin-top: 2rem;
+        width: max-content;
+        padding: 2rem 4rem;
+        border-radius: 0.425rem;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.6s;
+
+        p {
+            z-index: 10000;
+            position: inherit;
+            transition: all 0.4s;
+        }
+
+        div.bgc {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0%;
+            height: 100%;
+            background-color: var(--green);
+            clip-path: polygon(0 0, 100% 0%, 84% 100%, 0 100%);
+
+            transition: all 0.6s;
+            z-index: 0;
+        }
+
+        &:hover {
+            color: var(--green);
+
+            div.bgc {
+                width: 130%;
+            }
+
+            p {
+                color: var(--dark-navy);
+            }
+        }
+
+        
     }
 
 `;

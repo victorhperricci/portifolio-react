@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import Button from "../../../Button/Button";
 import { PagePrincipalContainer } from "./style";
 
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 
 const PagePrincipal = () => {
   const linha1 = useRef();
@@ -64,21 +64,21 @@ const PagePrincipal = () => {
         <div ref={linha1} className="linha"></div>
         <div ref={linha2} className="linha"></div>
         <div ref={linha3} className="linha"></div>
-
-        <Button
-          data-aos-anchor=".sobre"
-          color="var(--slate)"
-          border="var(--slate)"
-          bgcColor="transparent"
-          hover="var(--green)"
-        >
-          <p>Me Contate !</p>
-        </Button>
-
-        <Link className="link-sobre" to="sobre" smooth={true} duration={1000}>
-          <p>↓</p>
-        </Link>
       </h1>
+
+      <Link className="link" to="/contato" data-aos-anchor=".sobre">
+        <div className="bgc"></div>
+        <p>Me Contate !</p>
+      </Link>
+
+      <LinkScroll
+        className="link-sobre"
+        to="sobre"
+        smooth={true}
+        duration={1000}
+      >
+        <p>↓</p>
+      </LinkScroll>
     </PagePrincipalContainer>
   );
 };

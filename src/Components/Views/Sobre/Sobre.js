@@ -1,71 +1,45 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { UserStorage } from "../../../Context/UserContext";
-import { SobreContainer } from "./style";
-import { motion } from "framer-motion";
-import Titulo from "../../Titulo/Titulo";
-import imageSobre from "../../../assets/image_sobre.jpg";
+import { SobreContainer, MainContainer } from "./style";
+import TextContainerAbout from "./TextContainerAbout";
+import ImageContainer from "./ImageContainer";
+
 import { Link } from "react-router-dom";
-import Button from "../../Button/Button";
-
-const ImageContainer = ({ setIsHovered }) => {
-  return (
-    <motion.div
-      whileHover={{ scale: 1.1, x: -30, y: -20 }}
-      onHoverStart={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
-      whileTap={{ scale: 0.5 }}
-      transition={{ delay: 0.1 }}
-      className="image_about"
-    >
-      <div className="box-photo">
-        <img src={imageSobre} />
-        <motion.div className="background_green"></motion.div>
-      </div>
-    </motion.div>
-  );
-};
-
-const TextContainerAbout = () => {
-  return (
-    <div className="text_about div">
-      <Titulo texto="Sobre Mim" />
-      <p className="p">
-        Sou Desenvolvedor Front End localizado em Santo André - SP. Tenho uma
-        séria paixão por UI/UX, animações e uma criação intuitiva e dinâmica
-        para o usuário
-      </p>
-      <p className="p">
-        Sou uma pessoa organizada, busco resolver os problemas o mais rápido
-        possível, autodidata, proativo, e buscando aprender e adquirir
-        experiência sempre!
-      </p>
-      <p className="p">
-        Se caso ficou interessado. peço que por favor entre em{" "}
-        <Link to="/contato">Contato</Link> comigo para podermos transformar sua
-        ideia em realidade!
-      </p>
-    </div>
-  );
-};
+import Aos from "aos";
+import Experience from "../Experiencia/Experience";
 
 const Sobre = () => {
+  const [isRotate, setIsRotate] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const { animationRoutes } = useContext(UserStorage);
 
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
-    <SobreContainer
-      className="section"
-      variants={animationRoutes}
-      animate="mostrar"
-      initial="inicial"
-      exit="esconder"
-      hovered={isHovered}
-    >
-      <div className="container-texts">
-        <TextContainerAbout />
-      </div>
-      <ImageContainer setIsHovered={setIsHovered} />
-    </SobreContainer>
+    <MainContainer>
+      <SobreContainer
+        className="section"
+        variants={animationRoutes}
+        animate="mostrar"
+        initial="inicial"
+        exit="esconder"
+        hovered={isHovered}
+      >
+        <div className="container-texts">
+          <TextContainerAbout />
+          <Link className="link" to="/contato">
+            <div className="bgc"></div>
+            <p>Entre em Contato !</p>
+          </Link>
+        </div>
+      </SobreContainer>
+      <ImageContainer isRotate={isRotate} setIsHovered={setIsHovered} />
+      <Experience setIsRotate={setIsRotate} />
+    </MainContainer>
   );
 };
 
