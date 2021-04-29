@@ -125,4 +125,36 @@ export const ExperienceContainer = styled.section`
       }
     }
   }
+
+  @media (max-width: 920px) {
+    padding: 0px 50px 0px 50px;
+  }
+
+  @media (max-width: 650px) {
+    .tec-container {
+      width: 100%;
+      .tec-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+
+      }
+    }
+
+    .exp-profissional {
+    h2 {
+      color: var(--green);
+    }
+    .empregos {
+      margin: 1rem 0;
+      .card_emprego {
+        width: 100%;
+       
+      }
+    }
+    }
+
+    p {
+      width: 100%;
+    }
+  }
 `;

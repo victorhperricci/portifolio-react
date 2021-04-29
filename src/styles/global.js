@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
 
         &::-webkit-scrollbar {
-            width: 12px;               /* width of the entire scrollbar */
+            width: 5px;               /* width of the entire scrollbar */
         }
         
         &::-webkit-scrollbar-track {
@@ -264,6 +264,9 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+
+    // Imagem Sobre 
+    
 
 
 `;

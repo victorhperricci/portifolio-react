@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const MainContainer = styled(motion.main)`
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: ${(props) => props.media ? '1fr' : '2fr 1fr'};
   grid-template-rows: 1fr 1fr;
 `;
 
@@ -20,9 +20,13 @@ export const SobreContainer = styled(motion.section)`
 
   .container-texts {
     width: 100%;
+    height: auto;
+    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: ${(props) => props.media ? 'center' : 'flex-start'};
+
     .text_about {
       width: 100%;
       display: flex;
@@ -32,7 +36,7 @@ export const SobreContainer = styled(motion.section)`
       p {
         width: 80%;
         color: var(--slate);
-        font-size: 1.2rem;
+        font-size: min(1rem, 4vw);
         line-height: 2rem;
       }
 
@@ -50,6 +54,22 @@ export const SobreContainer = styled(motion.section)`
       animation: fadeInLeft 1s forwards;
       transform: translateX(-300%);
       animation-delay: 1.4s;
+      align-self: flex-start;
     }
   }
+
+  @media (max-width: 920px) {
+    padding: 0px 25px 0px 25px;
+    height: auto;
+
+    .container-texts {
+      .text_about {
+        p {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+
 `;

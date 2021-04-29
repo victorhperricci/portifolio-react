@@ -6,7 +6,7 @@ import useMedia from "../../../../Hooks/useMedia";
 
 const ProjetosMini = () => {
   const [slidesFetch, setSlidesFetch] = useState(null);
-  const media = useMedia("(max-width: 550px)");
+  const media = useMedia("(max-width: 600px)");
 
   const [slide, setSlide] = useState(0);
   const wrapper = useRef();

@@ -46,11 +46,6 @@ const ImageContainer = ({ setIsHovered, isRotate }) => {
 
   return (
     <DivImage
-      // whileHover={{ scale: 1.1, x: -30, y: -20 }}
-      // onHoverStart={() => setIsHovered(true)}
-      // onHoverEnd={() => setIsHovered(false)}
-      // whileTap={{ scale: 0.5 }}
-      // transition={{ delay: 0.1 }}
       className="image_about"
     >
       <motion.div className="box-photo">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CardContainer } from "./CardStyle";
-import imageSobre from "../../../../assets/image_sobre.jpg";
-import Rocket from "../../../../assets/rocket.gif";
+import ImageSobre from "../ImageSobre/ImageSobre";
+import ImageRocket from "../ImageRocket/ImageRocket";
 
 const Card = ({ isRotate }) => {
   return (
@@ -10,12 +10,8 @@ const Card = ({ isRotate }) => {
         className="flip"
         style={{ transform: `rotateY(${isRotate ? 180 : 0}deg)` }}
       >
-        <div className="item_flip">
-          <img src={imageSobre} />
-        </div>
-        <div className="item_flip">
-          <img src={Rocket} />
-        </div>
+        <ImageSobre />
+        <ImageRocket />
       </div>
     </CardContainer>
   );
