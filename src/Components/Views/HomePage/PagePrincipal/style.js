@@ -55,6 +55,7 @@ export const PagePrincipalContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   position: relative;
   user-select: none;
 
@@ -64,10 +65,10 @@ export const PagePrincipalContainer = styled.div`
 
     div.linha {
       display: flex;
-      width: 70%;
+      width: 100%;
       position: relative;
       span {
-        font-size: max(1rem, 3vw);
+        font-size: min(3rem, 3vw);
         font-weight: bold;
         transform: scale(2);
         color: var(--slate);
@@ -92,7 +93,22 @@ export const PagePrincipalContainer = styled.div`
         }
 
         @media (max-width: 1080px) {
-          font-size: 2rem;
+          margin: 10px 4px;
+
+          &.space-letter {
+            margin: 0 8px;
+          }
+        }
+
+        @media (max-width: 550px) {
+          margin: 5px 2px;
+          /* font-size: max(1rem, 3vw); */
+          font-size: 1.2rem;
+          padding-left: 0px;
+
+          &.space-letter {
+            margin: 0 4px;
+          }
         }
       }
 
@@ -135,5 +151,9 @@ export const PagePrincipalContainer = styled.div`
     animation: fadeInLeft 1s forwards;
     transform: translateX(-300%);
     animation-delay: 2s;
+  }
+
+  @media (max-width: 920px) {
+    height: 85vh;
   }
 `;

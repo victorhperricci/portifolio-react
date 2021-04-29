@@ -2,9 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 
 import MouseOver from "../../../../assets/mouseover2.png";
 import { ProjetosMiniContainer } from "./ProjetosMiniContainer";
+import useMedia from "../../../../Hooks/useMedia";
 
 const ProjetosMini = () => {
   const [slidesFetch, setSlidesFetch] = useState(null);
+  const media = useMedia("(max-width: 550px)");
+
   const [slide, setSlide] = useState(0);
   const wrapper = useRef();
   const controlsSelect = useRef();
@@ -98,24 +101,28 @@ const ProjetosMini = () => {
       </ProjetosMiniContainer>
 
       <div className="controls">
-        <button
-          className="prev"
-          data-aos="fade-right"
-          data-aos-delay="300"
-          onClick={slidePrev}
-        >
-          <i className="fas fa-arrow-left"></i>
-        </button>
-        <button
-          className="next"
-          data-aos="fade-left"
-          data-aos-delay="300"
-          onClick={slideNext}
-        >
-          <i className="fas fa-arrow-right"></i>
-        </button>
+        {!media && (
+          <>
+            <button
+              className="prev"
+              data-aos="fade-right"
+              data-aos-delay="300"
+              onClick={slidePrev}
+            >
+              <i className="fas fa-arrow-left"></i>
+            </button>
+            <button
+              className="next"
+              data-aos="fade-left"
+              data-aos-delay="300"
+              onClick={slideNext}
+            >
+              <i className="fas fa-arrow-right"></i>
+            </button>
+          </>
+        )}
 
-        <div ref={controlsSelect} data-aos="fade-up" className="controls-select">
+        <div ref={controlsSelect} className="controls-select">
           <span></span>
           <span></span>
           <span></span>

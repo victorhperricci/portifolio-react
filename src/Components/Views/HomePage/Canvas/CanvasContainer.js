@@ -6,4 +6,11 @@ export const ContainerCanvas = styled.canvas`
   position: absolute;
   width: 100%;
   height: 99vh;
+  padding-left: 150px;
+
+  @media (max-width: 920px) {
+    padding-left: 0px;
+
+    height: 84vh;
+  }
 `;

@@ -8,6 +8,7 @@ export const ProjetosMiniContainer = styled.div`
 
   transition: all 0.6s;
   transition-delay: 0.3s;
+  border-radius: 0.8rem;
 
   & > div {
     margin: 0 10%;
@@ -34,6 +35,7 @@ export const ProjetosMiniContainer = styled.div`
       background-color: rgba(240, 240, 240, 0.1);
       height: 100%;
       width: 100%;
+      border-radius: 0.8rem;
 
       display: flex;
       justify-content: center;

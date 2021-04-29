@@ -18,10 +18,10 @@ const AnimationSobre = () => {
     <div
       data-aos="slide-up"
       data-aos-delay="800"
-      // className="animation-container"
+      className="animation-container"
     >
       <Lottie
-        // className="animation"
+        className="animation"
         options={defaultOptions}
         isStopped={animationState.isStopped}
         isPaused={animationState.isPaused}

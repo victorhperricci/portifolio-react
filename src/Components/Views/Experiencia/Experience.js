@@ -1,23 +1,23 @@
 import React, { useEffect, useRef } from "react";
 import { ExperienceContainer } from "./style";
 import Lottie from "react-lottie";
-import animationData from "../../animationRocket.json";
 import Titulo from "../../Titulo/Titulo";
 import { Link } from "react-router-dom";
 
-const Experience = ({ setIsRotate }) => {
+const Experience = ({ setIsRotate, isRotate }) => {
   const experienceContainer = useRef();
-  const title = useRef();
-  const subtitle = useRef();
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const topPage = document.documentElement.scrollTop;
-      const topExperience = experienceContainer.current.offsetTop;
+    if (experienceContainer.current) {
+      window.addEventListener("scroll", () => {
+        const topPage = document.documentElement.scrollTop;
+        const topExperience = experienceContainer.current.getBoundingClientRect()
+          .top;
 
-      topPage >= topExperience - 200 ? setIsRotate(true) : setIsRotate(false);
-    });
-  });
+        topPage >= topExperience - 100 ? setIsRotate(true) : setIsRotate(false);
+      });
+    }
+  }, []);
 
   return (
     <ExperienceContainer className="section" ref={experienceContainer}>

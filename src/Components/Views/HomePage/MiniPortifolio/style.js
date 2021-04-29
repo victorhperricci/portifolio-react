@@ -17,6 +17,9 @@ export const MiniPortifolioContainer = styled.section`
       /* font-family: "Open Sans", sans-serif; */
       line-height: 1.5rem;
       width: 70%;
+      @media (max-width: 750px) {
+        width: 100%;
+      }
     }
     a {
       color: var(--green);
@@ -47,6 +50,7 @@ export const MiniPortifolioContainer = styled.section`
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 20px 0;
 
         span {
           display: inline-block;
@@ -116,5 +120,9 @@ export const MiniPortifolioContainer = styled.section`
       width: 100%;
       z-index: 1000;
     }
+  }
+
+  @media (max-width: 550px) {
+    height: auto;
   }
 `;

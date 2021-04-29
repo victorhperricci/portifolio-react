@@ -20,9 +20,9 @@ export const SobreContainer = styled.section`
 
       font-size: clamp(1.5rem, 1.8rem, 2.5rem);
 
-      /* @media (max-width: 1080px) {
+      @media (max-width: 1080px) {
         font-size: 1.8rem;
-      } */
+      }
     }
 
     .texts {
@@ -31,7 +31,6 @@ export const SobreContainer = styled.section`
       width: 100%;
       p {
         color: var(--slate);
-        /* font-family: "Open Sans", sans-serif; */
         line-height: 1.5rem;
       }
 
@@ -58,6 +57,17 @@ export const SobreContainer = styled.section`
       object-fit: cover;
       max-width: 100%;
       height: initial !important;
+    }
+  }
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    height: auto;
+
+    .sobre {
+      h1 {
+        margin: 30px 0;
+      }
     }
   }
 `;

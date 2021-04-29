@@ -63,6 +63,10 @@ const Title = styled.h1`
   span.space-letter {
     margin: 0 10px;
   }
+
+  @media (max-width: 550px) {
+    margin: 30px 0;
+  }
 `;
 
 const Titulo = ({ texto }) => {

@@ -9,6 +9,7 @@ export const ExperienceContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  user-select: none;
 
   .container-experience {
     position: relative;

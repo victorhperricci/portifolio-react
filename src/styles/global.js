@@ -258,7 +258,12 @@ export const GlobalStyle = createGlobalStyle`
             }
         }
 
-        
+        @media(max-width: 500px) {
+            padding: 1.5rem 2rem;
+
+        }
     }
+
+
 
 `;

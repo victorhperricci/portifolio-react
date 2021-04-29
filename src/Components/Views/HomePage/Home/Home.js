@@ -1,5 +1,5 @@
 import { useViewportScroll } from "framer-motion";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { UserStorage } from "../../../../Context/UserContext";
 import Canvas from "../Canvas/Canvas";
 import Contato from "../Contato/Contato";
@@ -11,11 +11,6 @@ import { ContainerHome } from "./HomeStyle";
 
 export const Home = () => {
   const { animationRoutes } = useContext(UserStorage);
-  const { scrollYProgress } = useViewportScroll();
-
-  console.log(scrollYProgress);
-
-  console.log(animationRoutes);
 
   return (
     <ContainerHome
