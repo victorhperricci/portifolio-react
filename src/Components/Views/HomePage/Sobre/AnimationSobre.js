@@ -3,7 +3,7 @@ import Lottie from "react-lottie";
 import animationData from "../../../animation.json";
 
 const AnimationSobre = () => {
-  const [animationState, setAnimateState] = useState({
+  const [animationState] = useState({
     isStoped: false,
     isPaused: false,
   });

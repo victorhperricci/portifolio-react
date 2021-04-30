@@ -86,7 +86,7 @@ const ImageSobre = () => {
 
     return (
         <Image className={media ? 'img_mb' : ''}>
-          <img  src={imageSobre} />
+          <img  src={imageSobre} alt="Imagem Victor Hugo" />
         </Image>
     )
 }

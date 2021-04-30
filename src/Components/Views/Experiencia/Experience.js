@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { ExperienceContainer } from "./style";
-import Lottie from "react-lottie";
 import Titulo from "../../Titulo/Titulo";
 import { Link } from "react-router-dom";
 
-const Experience = ({ setIsRotate, isRotate }) => {
+const Experience = ({ setIsRotate  }) => {
   const experienceContainer = useRef();
 
   useEffect(() => {
@@ -29,7 +28,7 @@ const Experience = ({ setIsRotate, isRotate }) => {
             data-aos-delay="100"
             className="item_experience"
           >
-            Acadêmica <i class="fas fa-share"></i>
+            Acadêmica <i className="fas fa-share"></i>
           </p>
 
           <p className="p" data-aos-delay="200" data-aos="fade-down">
@@ -50,27 +49,27 @@ const Experience = ({ setIsRotate, isRotate }) => {
             </p>
             <div className="tec-list">
               <p className="tec_item">
-                React JS <i class="fab fa-react fa-2x"></i>
+                React JS <i className="fab fa-react fa-2x"></i>
               </p>
 
               <p className="tec_item">
-                Scss <i class="fab fa-sass fa-2x"></i>
+                Scss <i className="fab fa-sass fa-2x"></i>
               </p>
 
               <p className="tec_item">
-                Node JS <i class="fab fa-node fa-2x"></i>
+                Node JS <i className="fab fa-node fa-2x"></i>
               </p>
 
               <p className="tec_item">
-                JavaScript <i class="fab fa-js-square fa-2x"></i>
+                JavaScript <i className="fab fa-js-square fa-2x"></i>
               </p>
 
               <p className="tec_item">
-                HTML <i class="fab fa-html5 fa-2x"></i>
+                HTML <i className="fab fa-html5 fa-2x"></i>
               </p>
 
               <p className="tec_item">
-                CSS <i class="fab fa-css3-alt fa-2x"></i>
+                CSS <i className="fab fa-css3-alt fa-2x"></i>
               </p>
             </div>
           </div>

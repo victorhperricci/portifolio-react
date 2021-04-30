@@ -90,29 +90,36 @@ const Contato = () => {
             href="https://www.linkedin.com/in/victor-hugo-alves-perricci-1603/"
             target="_blank"
             className="media-item"
+            rel="noreferrer"
           >
-            <i class="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin"></i>
           </a>
+
           <a
             href="https://github.com/VictorHAP1603"
             target="_blank"
             className="media-item"
+            rel="noreferrer"
           >
-            <i class="fab fa-github-square"></i>
+            <i className="fab fa-github-square"></i>
           </a>
+
           <a
             href="https://api.whatsapp.com/send?phone=5511970521612&amp;text=Ol%C3%A1!%20Olhei%20seu%20portif%C3%B3lio%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es"
             target="_blank"
             className="media-item"
+            rel="noreferrer"
           >
-            <i class="fab fa-whatsapp-square"></i>
+            <i className="fab fa-whatsapp-square"></i>
           </a>
+
           <a
             href="https://www.instagram.com/vitao_1603/"
             target="_blank"
             className="media-item"
+            rel="noreferrer"
           >
-            <i class="fab fa-instagram-square"></i>
+            <i className="fab fa-instagram-square"></i>
           </a>
         </ul>
       </div>

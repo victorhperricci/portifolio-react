@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import styled, { keyframes } from "styled-components";
 

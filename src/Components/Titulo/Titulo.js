@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import styled, { keyframes } from "styled-components";
 
 const animateTitleHover = keyframes`
@@ -37,9 +37,6 @@ const animateTitleHover = keyframes`
     transform: scale3d(1, 1, 1);
   }
 
-`;
-
-const animateTitle = keyframes`
 `;
 
 const Title = styled.h1`

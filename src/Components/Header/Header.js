@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef  } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 import { HeaderContainer } from "./HeaderStyle";

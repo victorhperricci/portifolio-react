@@ -8,7 +8,6 @@ const PagePrincipal = () => {
   const linha1 = useRef();
   const linha2 = useRef();
   const linha3 = useRef();
-  const separador = useRef();
 
   const linha1Texto = "Olá,".split("");
   const linha2Texto = "Meu nome é Victor Hugo".split("");
@@ -30,7 +29,7 @@ const PagePrincipal = () => {
     linha2Texto.forEach((letra, index) => {
       const span = document.createElement("span");
 
-      if (letra == " ") span.classList.add("space-letter");
+      if (letra === " ") span.classList.add("space-letter");
 
       span.innerHTML = letra;
 
@@ -45,7 +44,7 @@ const PagePrincipal = () => {
     linha3Texto.forEach((letra, index) => {
       const span = document.createElement("span");
 
-      if (letra == " ") span.classList.add("space-letter");
+      if (letra === " ") span.classList.add("space-letter");
 
       span.innerHTML = letra;
 
@@ -56,7 +55,7 @@ const PagePrincipal = () => {
         }, 50 * index);
       }, 24 * 50);
     });
-  }, []);
+  });
 
   return (
     <PagePrincipalContainer>

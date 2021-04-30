@@ -17,7 +17,7 @@ const ImgRocket = styled.div`
 const ImageRocket = () => {
     return (
         <ImgRocket className="item_flip">
-          <img src={Rocket} />
+          <img src={Rocket} alt="Gif Rocket" />
         </ImgRocket>
     )
 }

@@ -1,5 +1,4 @@
-import { useViewportScroll } from "framer-motion";
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { UserStorage } from "../../../../Context/UserContext";
 import Canvas from "../Canvas/Canvas";
 import Contato from "../Contato/Contato";

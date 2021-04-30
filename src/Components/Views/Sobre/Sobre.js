@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { UserStorage } from "../../../Context/UserContext";
 import useMedia from '../../../Hooks/useMedia'
 import { SobreContainer, MainContainer } from "./style";
@@ -8,8 +8,7 @@ import ImageContainer from "./ImageContainer";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import Experience from "../Experiencia/Experience";
-import imageSobre from "../../../assets/image_sobre.jpg";
-import ImageSobre from "./ImageSobre/ImageSobre";
+
 
 const Sobre = () => {
   const [isRotate, setIsRotate] = useState(false);

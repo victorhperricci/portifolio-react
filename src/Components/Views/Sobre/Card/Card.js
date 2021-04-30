@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { CardContainer } from "./CardStyle";
 import ImageSobre from "../ImageSobre/ImageSobre";
 import ImageRocket from "../ImageRocket/ImageRocket";

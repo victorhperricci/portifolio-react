@@ -71,7 +71,7 @@ const ProjetosMini = () => {
         {slidesFetch &&
           slidesFetch.map((slide, index) => (
             <div key={`slide${index}`}>
-              <img className="img-film" src={slide.imgFilme} />
+              <img className="img-film" src={slide.imgFilme} alt={slide.titulo} />
               <div className="img-over">
                 <img src={MouseOver} />
               </div>
