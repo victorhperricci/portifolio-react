@@ -13,10 +13,6 @@ export const ContainerHome = styled(motion.main)`
   }
 
   @media (max-width: 920px) {
-    padding: 0px 50px 0px 50px;
-  }
-
-  @media (max-width: 500px) {
     padding: 0px 25px 0px 25px;
   }
 `;

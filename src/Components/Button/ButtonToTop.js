@@ -17,7 +17,7 @@ const Button = styled.button`
   right: 20px;
   bottom: 80px;
 
-  background-color: transparent;
+  background-color: var(--dark-navy);
   border: 1px solid var(--slate);
   padding: 20px;
   border-radius: 40%;

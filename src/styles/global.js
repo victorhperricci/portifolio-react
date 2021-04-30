@@ -209,6 +209,15 @@ export const GlobalStyle = createGlobalStyle`
             letter-spacing: 4px;
             
         }
+
+        @media (max-width: 400px) {
+            &::after {
+                bottom: 10px;
+            }
+            &::before {
+                top: 10px;
+            }
+        }
     }
 
 

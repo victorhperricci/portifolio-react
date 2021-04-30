@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { motion, useTransform, useViewportScroll } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import Card from "./Card/Card";
 
@@ -11,11 +11,6 @@ const DivImage = styled(motion.div)`
   grid-column: 2;
   grid-row: 1 / -1;
 
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: flex-start; */
-  /* padding-bottom: 150px; */
-
   div.box-photo {
     width: 90%;
     height: 40%;
@@ -26,17 +21,20 @@ const DivImage = styled(motion.div)`
     border-radius: 4rem;
 
     position: sticky;
-    top: 15%;
+    top: 10%;
 
     &:hover {
       box-shadow: 0px 0px 0px 0px var(--dark-navy), 0px 0px 0px 0px var(--green),
         0px 0px 0px 0px var(--dark-navy), 0px 0px 0px 0px var(--green);
+    }
 
-      /* .card {
-        .flip {
-          transform: rotateY(180deg);
-        }
-      } */
+    @media (max-width: 1300px) {
+      height: 30%;
+      top: 20%;
+    }
+    @media (max-width: 1000px) {
+      height: 20%;
+      top: 30%;
     }
   }
 `;

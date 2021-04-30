@@ -41,7 +41,6 @@ const Sobre = () => {
             <div className="bgc"></div>
             <p>Entre em Contato !</p>
           </Link>
-          {/* {media && <ImageSobre  />} */}
         </div>
       </SobreContainer>
       {!media && <ImageContainer isRotate={isRotate} setIsHovered={setIsHovered} /> }

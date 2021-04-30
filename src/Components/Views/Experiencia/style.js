@@ -4,7 +4,7 @@ export const ExperienceContainer = styled.section`
   height: auto;
   grid-column: 1;
   grid-row: 2;
-  padding: 0px 0px 0px 200px;
+  padding: 10% 0px 10% 200px;
 
   display: flex;
   flex-direction: column;
@@ -17,6 +17,14 @@ export const ExperienceContainer = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    h1 {
+      margin: 20px 0;
+    }
+
+    .academica {
+      margin-top: 20px;
+    }
 
     .item_experience {
       font-size: 1.5rem;
@@ -122,12 +130,36 @@ export const ExperienceContainer = styled.section`
             color: var(--light-slate);
           }
         }
+
+        .texts {
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .exp-profissional {
+      .empregos {
+        .card_emprego {
+          width: 100%;
+        }
       }
     }
   }
 
   @media (max-width: 920px) {
-    padding: 0px 50px 0px 50px;
+    padding: 10% 25px 10% 25px;
+
+    .exp-profissional {
+      .empregos {
+        .card_emprego {
+          width: 50%;
+        }
+      }
+    }
   }
 
   @media (max-width: 650px) {

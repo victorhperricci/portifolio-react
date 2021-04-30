@@ -83,7 +83,7 @@ export const HeaderContainer = styled.header`
     height: auto;
     position: sticky;
     top: 0;
-    padding: 15px 40px;
+    padding: 15px 25px;
     transform: ${(props) =>
       props.scroll ? "translateY(-110%)" : "translateY(0%)"};
     background-color: var(--dark-navy);
@@ -93,10 +93,10 @@ export const HeaderContainer = styled.header`
     .list-menu {
       position: absolute;
       width: 100%;
-      height: 84vh;
+      height: 90vh;
       left: 0;
       background-color: var(--dark-navy);
-      top: 16vh;
+      top: 10vh;
       padding: 20px 0;
       transform: ${(props) =>
         props.menuHamburguer ? "translateX(0%)" : "translateX(-100%)"};
@@ -121,8 +121,13 @@ export const HeaderContainer = styled.header`
 
     .logo {
       text-align: center;
+      /* height: 80%; */
 
-      a {
+      img {
+        height: 6vh;
+      }
+
+      a { 
         color: var(--green);
       }
     }

@@ -121,7 +121,7 @@ export const PagePrincipalContainer = styled.div`
   .link-sobre {
     position: absolute;
     bottom: 5rem;
-    left: 50%;
+    left: 45%;
 
     background-color: transparent;
     border: 1px solid var(--slate);

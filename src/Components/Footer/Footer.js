@@ -8,7 +8,7 @@ const FooterContainer = styled.footer`
   align-items: center;
   width: 100%;
   background-color: var(--green);
-  margin-top: 40px;
+  margin-top: 0px;
   padding: 20px 20px 20px 200px;
   font-size: min(1rem, 3vw);
 

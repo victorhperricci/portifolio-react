@@ -21,7 +21,7 @@ const Experience = ({ setIsRotate, isRotate }) => {
 
   return (
     <ExperienceContainer className="section" ref={experienceContainer}>
-      <div className="container-experience">
+      <div className="container-experience div">
         <Titulo texto="Experiência" />
         <div className="academica div">
           <p

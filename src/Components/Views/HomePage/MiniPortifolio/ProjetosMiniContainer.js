@@ -183,5 +183,18 @@ export const ProjetosMiniContainer = styled.div`
         }
       }
     }
+
+    @media (max-width: 600px) {
+      margin: 0 0;
+      width: 100%;
+    }
+
+    @media (max-width: 450px) {
+      .info-project {
+        .text {
+          width: 90%;
+        }
+      }
+    }
   }
 `;

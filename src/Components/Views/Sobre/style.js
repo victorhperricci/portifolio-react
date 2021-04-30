@@ -4,24 +4,24 @@ import { motion } from "framer-motion";
 export const MainContainer = styled(motion.main)`
   display: grid;
   grid-template-columns: ${(props) => props.media ? '1fr' : '2fr 1fr'};
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
 `;
 
 export const SobreContainer = styled(motion.section)`
   height: 100vh;
-  padding: 0px 0px 0px 200px;
+  padding: 10% 0px 10% 200px;
   width: 100%;
   display: flex;
+  align-items: center;
 
   h1 {
-    margin: 40px 0;
-    font-size: 3rem;
+    margin: 20px 0;
+    font-size: min(3rem, 10vw);
   }
-
+// 1080px
   .container-texts {
     width: 100%;
-    height: auto;
-    padding-bottom: 100px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +34,7 @@ export const SobreContainer = styled(motion.section)`
       justify-content: center;
 
       p {
-        width: 80%;
+        width: 90%;
         color: var(--slate);
         font-size: min(1rem, 4vw);
         line-height: 2rem;
@@ -59,17 +59,38 @@ export const SobreContainer = styled(motion.section)`
   }
 
   @media (max-width: 920px) {
-    padding: 0px 25px 0px 25px;
-    height: auto;
+    padding: 5% 25px 5% 25px;
+    height: 90vh;
+    align-items: center;
 
     .container-texts {
+      height: auto;
       .text_about {
         p {
-          width: 90%;
+          width: 100%;
         }
       }
     }
   }
 
+  @media (max-width: 530px) {
+    padding: 3% 25px 3% 25px;
+
+    .container-texts {
+      .text_about {
+        p {
+          width: 90%;
+          text-align: justify;
+          line-height: 1.7rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 370px) {
+    &::after {
+      margin-top: 10px;
+    }
+  }
 
 `;

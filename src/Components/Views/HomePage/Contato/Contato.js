@@ -66,6 +66,10 @@ const ContatoOcntainer = styled.section`
     @media (max-width: 550px) {
       width: 100%;
     }
+
+    @media (max-width: 450px) {
+      width: 100vw;
+    }
   }
 `;
 
