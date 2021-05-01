@@ -1,0 +1,55 @@
+[
+  {
+    "imgModal": "./assets/imagesPagesFull/marvel.png",
+    "imgMini": "./assets/imagesMini/marvel.png",
+    "link": "https://clone-marvel.netlify.app/"
+  },
+  {
+    "imgModal": "./assets/imagesPagesFull/devfinances.png",
+    "imgMini": "./assets/imagesMini/devfinances.png",
+    "link": "https://finances-dev.netlify.app/",
+    "retrato": true
+  },
+  {
+    "imgModal": "./assets/imagesPagesFull/bikcraft.png",
+    "imgMini": "./assets/imagesMini/bikcraft.png",
+    "link": "https://bik-craft.netlify.app/"
+  },
+  {
+    "imgModal": "./assets/imagesPagesFull/buypizzas.png",
+    "imgMini": "./assets/imagesMini/buypizzas.png",
+    "link": "https://buypizzas.netlify.app/",
+    "retrato": true
+  },
+  {
+    "imgModal": "./assets/imagesPagesFull/animais-fantasticos.png",
+    "imgMini": "./assets/imagesMini/animais-fantasticos.png",
+    "link": "https://clone-marvel.netlify.app/"
+  },
+  {
+    "imgModal": "./assets/imagesPagesFull/happy.png",
+    "imgMini": "./assets/imagesMini/happy.png",
+    "link": "https://happywebsite.herokuapp.com/",
+    "retrato": true
+  },
+  {
+    "imgModal": "./assets/imagesPagesFull/medicenter.png",
+    "imgMini": "./assets/imagesMini/medicenter.png",
+    "link": "https://medicenter.netlify.app/"
+  },
+  {
+    "imgModal": "./assets/imagesPagesFull/portifolio-antigo.png",
+    "imgMini": "./assets/imagesMini/portifolio-antigo.png",
+    "link": "https://victorhugoportifolio.netlify.app/"
+  },
+  {
+    "imgModal": "./assets/imagesPagesFull/technology.png",
+    "imgMini": "./assets/imagesMini/technology.png",
+    "link": "https://technology-website.netlify.app/"
+  },
+  {
+    "imgModal": "./assets/imagesPagesFull/wildbeast.png",
+    "imgMini": "./assets/imagesMini/wildbeast.png",
+    "link": "https://wild-beast.netlify.app/"
+  }
+]

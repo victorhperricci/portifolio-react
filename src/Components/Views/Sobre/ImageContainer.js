@@ -13,7 +13,7 @@ const DivImage = styled(motion.div)`
 
   div.box-photo {
     width: 90%;
-    height: 40%;
+    height: 35%;
 
     position: relative;
     transition: all 0.4s;
@@ -39,13 +39,11 @@ const DivImage = styled(motion.div)`
   }
 `;
 
-const ImageContainer = ({ setIsHovered, isRotate }) => {
+const ImageContainer = ({ isRotate }) => {
   console.log(isRotate);
 
   return (
-    <DivImage
-      className="image_about"
-    >
+    <DivImage className="image_about">
       <motion.div className="box-photo">
         <Card isRotate={isRotate} />
       </motion.div>

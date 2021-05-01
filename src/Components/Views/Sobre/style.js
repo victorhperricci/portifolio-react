@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 export const MainContainer = styled(motion.main)`
   display: grid;
-  grid-template-columns: ${(props) => props.media ? '1fr' : '2fr 1fr'};
+  grid-template-columns: ${(props) => (props.media ? "1fr" : "2fr 1fr")};
   grid-template-rows: auto auto;
 `;
 
 export const SobreContainer = styled(motion.section)`
   height: 100vh;
-  padding: 10% 0px 10% 200px;
+  padding: 5% 0px 5% 200px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -18,14 +18,12 @@ export const SobreContainer = styled(motion.section)`
     margin: 20px 0;
     font-size: min(3rem, 10vw);
   }
-// 1080px
   .container-texts {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: ${(props) => props.media ? 'center' : 'flex-start'};
+    align-items: ${(props) => (props.media ? "center" : "flex-start")};
 
     .text_about {
       width: 100%;
@@ -60,7 +58,7 @@ export const SobreContainer = styled(motion.section)`
 
   @media (max-width: 920px) {
     padding: 5% 25px 5% 25px;
-    height: 90vh;
+    height: 86vh;
     align-items: center;
 
     .container-texts {
@@ -85,6 +83,11 @@ export const SobreContainer = styled(motion.section)`
         }
       }
     }
+
+    a.link {
+      margin-top: 0px !important;
+      margin: 10px 0 !important;
+    }
   }
 
   @media (max-width: 370px) {
@@ -92,5 +95,4 @@ export const SobreContainer = styled(motion.section)`
       margin-top: 10px;
     }
   }
-
 `;

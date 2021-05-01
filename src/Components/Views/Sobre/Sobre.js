@@ -1,21 +1,21 @@
 import React, { useContext, useEffect, useState } from "react";
 import { UserStorage } from "../../../Context/UserContext";
-import useMedia from '../../../Hooks/useMedia'
+import useMedia from "../../../Hooks/useMedia";
 import { SobreContainer, MainContainer } from "./style";
 import TextContainerAbout from "./TextContainerAbout";
 import ImageContainer from "./ImageContainer";
 
 import { Link } from "react-router-dom";
+
 import Aos from "aos";
 import Experience from "../Experiencia/Experience";
-
 
 const Sobre = () => {
   const [isRotate, setIsRotate] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const { animationRoutes } = useContext(UserStorage);
 
-  const media = useMedia("(max-width:920px)")
+  let media = useMedia("(max-width:920px)");
 
   useEffect(() => {
     Aos.init({
@@ -24,7 +24,7 @@ const Sobre = () => {
   }, []);
 
   return (
-    <MainContainer media={media} >
+    <MainContainer media={media}>
       <SobreContainer
         media={media}
         className="section"
@@ -42,7 +42,11 @@ const Sobre = () => {
           </Link>
         </div>
       </SobreContainer>
-      {!media && <ImageContainer isRotate={isRotate} setIsHovered={setIsHovered} /> }
+
+      {!media && (
+        <ImageContainer isRotate={isRotate} setIsHovered={setIsHovered} />
+      )}
+
       <Experience setIsRotate={setIsRotate} />
     </MainContainer>
   );

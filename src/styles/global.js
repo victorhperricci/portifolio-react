@@ -148,7 +148,7 @@ export const GlobalStyle = createGlobalStyle`
             content: '</div>';
             display: block;
 
-            margin: 0px 0px 0px 0px ;
+            margin: 20px 0px 20px 0px ;
             transform: translateX(-20px);
 
             color: var(--slate);
@@ -163,9 +163,8 @@ export const GlobalStyle = createGlobalStyle`
             display: block;
             transform: translateX(-20px);
 
-            /* position: absolute; */
-            /* top: -20px; */
-            margin: 0px 0px 20px 0px ;
+        
+            margin: 20px 0px 20px 0px ;
             
             color: var(--slate);
             opacity: 0.5;
@@ -175,51 +174,6 @@ export const GlobalStyle = createGlobalStyle`
             
         }
     }
-
-    .section {
-        position: relative;
-
-        &::after {
-            content: '</section>';
-            display: block; 
-            position: absolute;
-            bottom: 30px;
-            transform: translateX(-20px);
-
-            color: var(--slate);
-            opacity: 0.3;
-            font-size: 0.8rem;
-            font-family: 'Pacifico', cursive;
-
-            letter-spacing: 4px;
-        }
-
-        &::before {
-            content: '<section>';
-            display: block;
-            transform: translateX(-20px);
-            position: absolute;
-            top: 30px;
-            margin: 0px 0px 20px 0px ;
-            
-            color: var(--slate);
-            opacity: 0.5;
-            font-size: 0.8rem;
-            font-family: 'Pacifico', cursive;
-            letter-spacing: 4px;
-            
-        }
-
-        @media (max-width: 400px) {
-            &::after {
-                bottom: 10px;
-            }
-            &::before {
-                top: 10px;
-            }
-        }
-    }
-
 
     // Link
 

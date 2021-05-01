@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const MiniPortifolioContainer = styled.section`
   height: 100vh;
-  padding: 50px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

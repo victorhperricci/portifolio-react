@@ -1,25 +1,24 @@
 import React, { useEffect, useRef } from "react";
 import { ExperienceContainer } from "./style";
 import Titulo from "../../Titulo/Titulo";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-const Experience = ({ setIsRotate  }) => {
-  const experienceContainer = useRef();
+const Experience = ({ setIsRotate }) => {
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    if (experienceContainer.current) {
+    const experienceContainer = document.querySelector("#experience");
+    if (pathname === "/sobre") {
       window.addEventListener("scroll", () => {
         const topPage = document.documentElement.scrollTop;
-        const topExperience = experienceContainer.current.getBoundingClientRect()
-          .top;
-
+        const topExperience = experienceContainer.getBoundingClientRect().top;
         topPage >= topExperience - 100 ? setIsRotate(true) : setIsRotate(false);
       });
     }
   }, []);
 
   return (
-    <ExperienceContainer className="section" ref={experienceContainer}>
+    <ExperienceContainer id="experience" className="section">
       <div className="container-experience div">
         <Titulo texto="Experiência" />
         <div className="academica div">
@@ -81,7 +80,7 @@ const Experience = ({ setIsRotate  }) => {
             data-aos-delay="400"
             className="item_experience"
           >
-            Profissional <i class="fas fa-share"></i>
+            Profissional <i className="fas fa-share"></i>
           </p>
 
           <div className="empregos" data-aos-delay="500" data-aos="fade-down">

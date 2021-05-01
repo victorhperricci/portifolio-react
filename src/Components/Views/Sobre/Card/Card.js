@@ -10,7 +10,7 @@ const Card = ({ isRotate }) => {
         className="flip"
         style={{ transform: `rotateY(${isRotate ? 180 : 0}deg)` }}
       >
-        <ImageSobre />
+        <ImageSobre isRotate={isRotate} />
         <ImageRocket />
       </div>
     </CardContainer>

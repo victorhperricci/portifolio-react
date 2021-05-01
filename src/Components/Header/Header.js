@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef  } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 import { HeaderContainer } from "./HeaderStyle";
@@ -44,7 +44,7 @@ const Header = () => {
         <ul>
           <NavLink to="/sobre">Sobre</NavLink>
           <NavLink to="/habilidades">Habilidades</NavLink>
-          <NavLink to="/trabalhos">Trabalho</NavLink>
+          <NavLink to="/projetos">Projetos</NavLink>
         </ul>
       </nav>
 
