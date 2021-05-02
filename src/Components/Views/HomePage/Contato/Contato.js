@@ -85,7 +85,7 @@ const Contato = () => {
       <div className="redes-sociais">
         <h2 data-aos="fade-down">Redes Sociais</h2>
 
-        <ul data-aos="fade-up" className="social-medias">
+        <ul data-aos="fade-down" className="social-medias">
           <a
             href="https://www.linkedin.com/in/victor-hugo-alves-perricci-1603/"
             target="_blank"
