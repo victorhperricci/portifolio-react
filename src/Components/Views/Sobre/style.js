@@ -20,6 +20,8 @@ export const SobreContainer = styled(motion.section)`
   }
   .container-texts {
     width: 100%;
+    height: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,6 +29,7 @@ export const SobreContainer = styled(motion.section)`
 
     .text_about {
       width: 100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -57,8 +60,8 @@ export const SobreContainer = styled(motion.section)`
   }
 
   @media (max-width: 920px) {
-    padding: 5% 25px 5% 25px;
-    height: 86vh;
+    padding: 10% 25px 5% 25px;
+    height: auto;
     align-items: center;
 
     .container-texts {
