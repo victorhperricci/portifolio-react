@@ -40,8 +40,6 @@ const DivImage = styled(motion.div)`
 `;
 
 const ImageContainer = ({ isRotate }) => {
-  console.log(isRotate);
-
   return (
     <DivImage className="image_about">
       <motion.div className="box-photo">

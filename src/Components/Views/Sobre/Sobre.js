@@ -15,7 +15,7 @@ const Sobre = () => {
   const [isHovered, setIsHovered] = useState(false);
   const { animationRoutes } = useContext(UserStorage);
 
-  let media = useMedia("(max-width:920px)");
+  const media = useMedia("(max-width:920px)");
 
   useEffect(() => {
     Aos.init({
@@ -24,9 +24,9 @@ const Sobre = () => {
   }, []);
 
   return (
-    <MainContainer media={media}>
+    <MainContainer $media={media}>
       <SobreContainer
-        media={media}
+        $media={media}
         className="section"
         variants={animationRoutes}
         animate="mostrar"

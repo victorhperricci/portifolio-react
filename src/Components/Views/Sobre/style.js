@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const MainContainer = styled(motion.main)`
   display: grid;
-  grid-template-columns: ${(props) => (props.media ? "1fr" : "2fr 1fr")};
+  grid-template-columns: ${(props) => (props.$media ? "1fr" : "2fr 1fr")};
   grid-template-rows: auto auto;
 `;
 
@@ -25,7 +25,7 @@ export const SobreContainer = styled(motion.section)`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: ${(props) => (props.media ? "center" : "flex-start")};
+    align-items: ${(props) => (props.$media ? "center" : "flex-start")};
 
     .text_about {
       width: 100%;
@@ -80,8 +80,7 @@ export const SobreContainer = styled(motion.section)`
     .container-texts {
       .text_about {
         p {
-          width: 90%;
-          text-align: justify;
+          width: 100%;
           line-height: 1.7rem;
         }
       }
