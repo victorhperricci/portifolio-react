@@ -5,7 +5,7 @@ import Titulo from "../../../Titulo/Titulo";
 const ContatoOcntainer = styled.section`
   width: 100%;
   height: 50vh;
-  padding: 100px 0 70px 0;
+  padding: 150px 0 200px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
