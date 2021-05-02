@@ -1,55 +1,67 @@
 [
   {
-    "imgModal": "./assets/imagesPagesFull/marvel.png",
+    "imgModal": "./assets/imagesPagesFull/marvel.jpg",
     "imgMini": "./assets/imagesMini/marvel.png",
     "link": "https://clone-marvel.netlify.app/"
   },
   {
-    "imgModal": "./assets/imagesPagesFull/devfinances.png",
+    "imgModal": "./assets/imagesPagesFull/devfinances.jpg",
     "imgMini": "./assets/imagesMini/devfinances.png",
     "link": "https://finances-dev.netlify.app/",
     "retrato": true
   },
   {
-    "imgModal": "./assets/imagesPagesFull/bikcraft.png",
+    "imgModal": "./assets/imagesPagesFull/bikcraft.jpg",
     "imgMini": "./assets/imagesMini/bikcraft.png",
     "link": "https://bik-craft.netlify.app/"
   },
   {
-    "imgModal": "./assets/imagesPagesFull/buypizzas.png",
+    "imgModal": "./assets/imagesPagesFull/buypizzas.jpg",
     "imgMini": "./assets/imagesMini/buypizzas.png",
     "link": "https://buypizzas.netlify.app/",
     "retrato": true
   },
   {
-    "imgModal": "./assets/imagesPagesFull/animais-fantasticos.png",
+    "imgModal": "./assets/imagesPagesFull/animais-fantasticos.jpg",
     "imgMini": "./assets/imagesMini/animais-fantasticos.png",
     "link": "https://clone-marvel.netlify.app/"
   },
   {
-    "imgModal": "./assets/imagesPagesFull/happy.png",
+    "imgModal": "./assets/imagesPagesFull/happy.jpg",
     "imgMini": "./assets/imagesMini/happy.png",
     "link": "https://happywebsite.herokuapp.com/",
     "retrato": true
   },
   {
-    "imgModal": "./assets/imagesPagesFull/medicenter.png",
+    "imgModal": "./assets/imagesPagesFull/medicenter.jpg",
     "imgMini": "./assets/imagesMini/medicenter.png",
     "link": "https://medicenter.netlify.app/"
   },
   {
-    "imgModal": "./assets/imagesPagesFull/portifolio-antigo.png",
+    "imgModal": "./assets/imagesPagesFull/portifolio-antigo.jpg",
     "imgMini": "./assets/imagesMini/portifolio-antigo.png",
     "link": "https://victorhugoportifolio.netlify.app/"
   },
   {
-    "imgModal": "./assets/imagesPagesFull/technology.png",
+    "imgModal": "./assets/imagesPagesFull/technology.jpg",
     "imgMini": "./assets/imagesMini/technology.png",
     "link": "https://technology-website.netlify.app/"
   },
   {
-    "imgModal": "./assets/imagesPagesFull/wildbeast.png",
+    "imgModal": "./assets/imagesPagesFull/wildbeast.jpg",
     "imgMini": "./assets/imagesMini/wildbeast.png",
     "link": "https://wild-beast.netlify.app/"
+  },
+  {
+    "imgModal": "./assets/imagesPagesFull/todo-list-ignite.jpg",
+    "imgMini": "./assets/imagesMini/todo-list-ignite.png",
+    "link": "https://ignite-challenge01-todolist.netlify.app/",
+    "retrato": true
+  },
+  {
+    "imgModal": "./assets/imagesPagesFull/calculadora.jpg",
+    "imgMini": "./assets/imagesMini/calculadora.jpg",
+    "link": "https://calculadora-online.netlify.app/",
+    "retrato": true
   }
 ]
