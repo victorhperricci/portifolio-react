@@ -4,6 +4,7 @@ export const UserStorage = React.createContext();
 
 const UserContext = (props) => {
   const [menuHamburguerOpen, setMenuHamburguerOpen] = useState(false);
+  const [menuHamburguerVaiPraCima, setMenuHamburguerVaiPraCima] = useState(false);
 
   const animationRoutes = {
     mostrar: {
@@ -28,7 +29,7 @@ const UserContext = (props) => {
 
   return (
     <UserStorage.Provider
-      value={{ animationRoutes, menuHamburguerOpen, setMenuHamburguerOpen }}
+      value={{ animationRoutes, menuHamburguerOpen, setMenuHamburguerOpen, setMenuHamburguerVaiPraCima, menuHamburguerVaiPraCima }}
     >
       {props.children}
     </UserStorage.Provider>

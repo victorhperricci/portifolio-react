@@ -80,7 +80,7 @@ export const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: auto;
+    height: 100px;
     position: sticky;
     top: 0;
     padding: 15px 25px;
@@ -96,7 +96,7 @@ export const HeaderContainer = styled.header`
       height: 90vh;
       left: 0;
       background-color: var(--dark-navy);
-      top: 10vh;
+      top: 101px;
       padding: 20px 0;
       transform: ${(props) =>
         props.menuHamburguer ? "translateX(0%)" : "translateX(-100%)"};
@@ -124,7 +124,7 @@ export const HeaderContainer = styled.header`
       /* height: 80%; */
 
       img {
-        height: 6vh;
+        height: 60px;
       }
 
       a { 

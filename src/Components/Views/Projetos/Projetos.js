@@ -1,12 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Modal from "./Modal";
 import ProjetoItem from "./ProjetoItem";
 import { ProjetosContainer } from "./ProjetosStyle";
+import { UserStorage } from '../../../Context/UserContext'
 
 const Projetos = () => {
+  const {setMenuHamburguerVaiPraCima} = useContext(UserStorage);
   const [projetos, setProjetos] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [dadosProject, setDadosProject] = useState();
+
+  const body = document.querySelector('body')
+
 
   useEffect(() => {
     fetch("./projetos.json")
@@ -17,6 +22,8 @@ const Projetos = () => {
   function openModal(project) {
     setIsModalOpen(true);
     setDadosProject(projetos[project]);
+    setMenuHamburguerVaiPraCima(true)
+    body.classList.add('inative')
   }
 
   return (
@@ -32,6 +39,7 @@ const Projetos = () => {
         ))}
       </ProjetosContainer>
       <Modal
+        body={body}
         dadosProject={dadosProject}
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}

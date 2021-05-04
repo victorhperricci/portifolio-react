@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled, { keyframes } from "styled-components";
+import { UserStorage } from "../../../Context/UserContext";
 
 const animateLink = keyframes`
     from {
@@ -56,9 +57,6 @@ const ModalContainer = styled.div`
     img {
       object-fit: cover;
       width: 100%;
-      /* height: 100%; */
-      /* transform: scale(2); */
-      /* zoom: 2; */
     }
   }
 
@@ -91,15 +89,32 @@ const ModalContainer = styled.div`
 
   @media (max-width: 920px) {
     .modal {
-      transform: translateY(3vh);
+      transform: translateY(-30px);
+    }
+  }
+  @media (max-width: 650px) {
+    .modal {
+      width: 90%;
+      display: flex;
+      justify-content: flex-start;
+     
+      img {
+        width: 100%;
+        height: ${(props) => (props.retrato ? "auto" : "200vh")};
+        object-fit: fill;
+      }
     }
   }
 `;
 
-const Modal = ({ dadosProject, setIsModalOpen, isModalOpen }) => {
+const Modal = ({ body, dadosProject, setIsModalOpen, isModalOpen }) => {
+  const {setMenuHamburguerVaiPraCima} = useContext(UserStorage);
+
   function outSideClick({ currentTarget, target }) {
     if (target === currentTarget) {
       setIsModalOpen(false);
+      setMenuHamburguerVaiPraCima(false)
+      body.classList.remove('inative')
     }
   }
 
