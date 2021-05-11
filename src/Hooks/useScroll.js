@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { UserStorage } from "../Context/UserContext";
 
 const useScroll = () => {
-  const [isDown, setIsDown] = useState(false);
+  const {setMenuHamburguerVaiPraCima, menuHamburguerVaiPraCima} = useContext(UserStorage)
   const { setMenuHamburguerOpen } = useContext(UserStorage);
 
   let lastScrollTop = 0;
@@ -13,9 +13,11 @@ const useScroll = () => {
       if (e.scrollY === lastScrollTop) return;
 
       if (this.scrollY < lastScrollTop) {
-        setIsDown(false);
+        setMenuHamburguerVaiPraCima(false);
+        setMenuHamburguerOpen(false);
+
       } else {
-        setIsDown(true);
+        setMenuHamburguerVaiPraCima(true);
         setMenuHamburguerOpen(false);
       }
 
@@ -23,7 +25,7 @@ const useScroll = () => {
     });
   }, []);
 
-  return isDown;
+  return menuHamburguerVaiPraCima;
 };
 
 export default useScroll;

@@ -52,6 +52,10 @@ export const GlobalStyle = createGlobalStyle`
             opacity: 0.7;    /* color of the scroll thumb */
             border-radius: 20px;       /* roundness of the scroll thumb */
         }
+
+        &.inative {
+            overflow: hidden;
+        }
     }
 
 
