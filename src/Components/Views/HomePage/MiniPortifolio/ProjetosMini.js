@@ -44,8 +44,6 @@ const ProjetosMini = () => {
   }, [slide]);
 
   function slidePrev() {
-    console.log(slide);
-
     setSlide(slide - 1);
     if (slide <= 0) {
       setSlide(3);
@@ -71,7 +69,11 @@ const ProjetosMini = () => {
         {slidesFetch &&
           slidesFetch.map((slide, index) => (
             <div key={`slide${index}`}>
-              <img className="img-film" src={slide.imgFilme} alt={slide.titulo} />
+              <img
+                className="img-film"
+                src={slide.imgFilme}
+                alt={slide.titulo}
+              />
               <div className="img-over">
                 <img src={MouseOver} />
               </div>
