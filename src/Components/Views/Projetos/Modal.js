@@ -85,6 +85,7 @@ const ModalContainer = styled.div`
   a.active {
     animation: ${animateLink} 0.5s forwards;
     animation-delay: 0.6s;
+    word-break: break-word;
   }
 
   @media (max-width: 920px) {
@@ -92,12 +93,13 @@ const ModalContainer = styled.div`
       transform: translateY(-30px);
     }
   }
+
   @media (max-width: 650px) {
     .modal {
       width: 90%;
       display: flex;
       justify-content: flex-start;
-     
+
       img {
         width: 100%;
         height: ${(props) => (props.retrato ? "auto" : "200vh")};
@@ -108,13 +110,13 @@ const ModalContainer = styled.div`
 `;
 
 const Modal = ({ body, dadosProject, setIsModalOpen, isModalOpen }) => {
-  const {setMenuHamburguerVaiPraCima} = useContext(UserStorage);
+  const { setMenuHamburguerVaiPraCima } = useContext(UserStorage);
 
   function outSideClick({ currentTarget, target }) {
     if (target === currentTarget) {
       setIsModalOpen(false);
-      setMenuHamburguerVaiPraCima(false)
-      body.classList.remove('inative')
+      setMenuHamburguerVaiPraCima(false);
+      body.classList.remove("inative");
     }
   }
 
