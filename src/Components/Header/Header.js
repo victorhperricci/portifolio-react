@@ -45,6 +45,7 @@ const Header = () => {
           <NavLink to="/sobre">Sobre</NavLink>
           <NavLink to="/habilidades">Habilidades</NavLink>
           <NavLink to="/projetos">Projetos</NavLink>
+          <NavLink to="/contato">Contato</NavLink>
         </ul>
 
         <ul className="list-socials">

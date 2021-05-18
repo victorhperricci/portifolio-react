@@ -28,15 +28,15 @@ const SobreIntroducao = () => {
           </p>
 
           <p className="p" data-aos="fade-down">
-            Desde o começo estou tentato tirar o máximo de conhecimento em tudo
+            Desde o começo estou tentando tirar o máximo de conhecimento em tudo
             que faço, tanto em projetos Freelancers quanto em Networks, por
             conta disso já conheci pessoas incríveis e que me deram a
-            oortunidade de estar onde estou hoje.
+            oportunidade de estar onde estou hoje.
           </p>
 
           <p className="p" data-aos="fade-down">
             Sigo estudando as stacks de front end, mas agora dei um passo a
-            frente e decidir me aprofundar no React JS, venho fazendo projetos e
+            frente e tomei a decisão de me aprofundar no React JS, venho fazendo projetos e
             cursos onlines para obter o melhor conhecimento
           </p>
 
