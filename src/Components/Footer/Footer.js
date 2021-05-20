@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const FooterContainer = styled.footer`
-  height: auto;
+  height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;

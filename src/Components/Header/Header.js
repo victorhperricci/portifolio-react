@@ -43,7 +43,6 @@ const Header = () => {
       <nav className="list-menu">
         <ul className="list-views">
           <NavLink to="/sobre">Sobre</NavLink>
-          <NavLink to="/habilidades">Habilidades</NavLink>
           <NavLink to="/projetos">Projetos</NavLink>
           <NavLink to="/contato">Contato</NavLink>
         </ul>

@@ -36,14 +36,13 @@ const SobreIntroducao = () => {
 
           <p className="p" data-aos="fade-down">
             Sigo estudando as stacks de front end, mas agora dei um passo a
-            frente e tomei a decisão de me aprofundar no React JS, venho fazendo projetos e
-            cursos onlines para obter o melhor conhecimento
+            frente e tomei a decisão de me aprofundar no React JS, venho fazendo
+            projetos e cursos onlines para obter o melhor conhecimento
           </p>
 
           <p className="p" data-aos="fade-down">
-            Mais sobre minha experiência e habilidades você pode encontrar em{" "}
-            <Link to="/sobre">Sobre</Link> e{" "}
-            <Link to="/habilidades">Habilidades</Link>{" "}
+            Mais sobre minha experiência você pode encontrar em{" "}
+            <Link to="/sobre">Sobre</Link>{" "}
           </p>
         </div>
       </div>

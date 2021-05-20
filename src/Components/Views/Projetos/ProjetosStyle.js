@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProjetosContainer = styled.section`
   padding: 0px 0px 0px 150px;
-  height: 100vh;
+  height: 95vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 

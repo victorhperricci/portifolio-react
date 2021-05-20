@@ -82,6 +82,7 @@ const Contato = () => {
           Caso queira entrar em contato, segue abaixo minhas redes sociais
         </p>
       </div>
+
       <div className="redes-sociais">
         <h2 data-aos="fade-down">Redes Sociais</h2>
 
