@@ -109,10 +109,10 @@ export const HeaderContainer = styled.header`
     .list-menu {
       position: absolute;
       width: 100%;
-      height: 90vh;
+      height: 80vh;
       left: 0;
       background-color: var(--dark-navy);
-      top: 101px;
+      top: 95px;
       padding: 20px 0;
       transform: ${(props) =>
         props.menuHamburguer ? "translateX(0%)" : "translateX(-100%)"};
