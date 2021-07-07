@@ -42,15 +42,16 @@ export const ContainerContato = styled.section`
         position: relative;
 
         &.textarea,
-        &.subject {
+        &.subject,
+        &.button {
           grid-column: 1 / -1;
         }
 
-        &:focus-within:after {
+        &:not(.button):focus-within:after {
           width: 100%;
         }
 
-        &:after {
+        &::after {
           content: "";
           display: block;
           position: absolute;
@@ -110,11 +111,37 @@ export const ContainerContato = styled.section`
         height: 100%;
         padding: 10px 15px;
       }
+
+      .message_email {
+        text-align: center;
+        grid-column: 1 / -1;
+        color: var(--green);
+      }
     }
   }
 
   .gif__contact {
     margin: 0px 10px;
     height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 920px) {
+    height: 85vh;
+    padding: 5% 25px 5% 25px;
+    /* width: 100%; */
+    /* display: flex; */
+    flex-direction: column;
+
+    .gif__contact {
+      display: none;
+    }
+
+    .contact {
+      margin-top: 1rem;
+    }
   }
 `;
