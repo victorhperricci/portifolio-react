@@ -185,9 +185,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: transparent;
         border: 1px solid var(--slate);
         color: var(--slate);
-        margin-top: 2rem;
         width: max-content;
-        padding: 2rem 4rem;
         border-radius: 0.425rem;
         position: relative;
         overflow: hidden;

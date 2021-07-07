@@ -151,6 +151,9 @@ export const PagePrincipalContainer = styled.div`
     animation: fadeInLeft 1s forwards;
     transform: translateX(-300%);
     animation-delay: 2s;
+    margin-top: 2rem;
+    padding: 2rem 4rem;
+
   }
 
   @media (max-width: 920px) {

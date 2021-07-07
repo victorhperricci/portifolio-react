@@ -56,6 +56,7 @@ export const SobreContainer = styled(motion.section)`
       transform: translateX(-300%);
       animation-delay: 1.4s;
       align-self: flex-start;
+      padding: 1.5rem 4rem;
     }
   }
 
