@@ -27,7 +27,7 @@ function App() {
               <Route path="/contato" element={<Contato />} />
             </Routes>
           </AnimatePresence>
-          <Footer />
+          {/* <Footer /> */}
         </UserContext>
       </BrowserRouter>
     </>
